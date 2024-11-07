@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>alurabook</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container-btn">
+            <label for="menu">
+                <span class="header-hmenu container-img"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-title">Categorias</li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Programação</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Front-end</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Business</a>
+                </li>
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Design & UX</a>
+                </li>
+            </ul>
+            <img src="./assets/images/Logo.svg" alt="icone" class="container-img">
+        </div>
+        <div class="container">
+            <a href="#"><img src="./assets/images/Favoritos.svg" alt="meus favoritos" class="container-img"></a>
+            <a href="#"><img src="./assets/images/Compras.svg" alt="carrinho de compras" class="container-img"></a>
+            <a href="#"><img src="./assets/images/Usuario.svg" alt="meu perfil" class="container-img"></a>
+        </div>
+    </header>
+    <section class="banner">
+        <h2 class="banner-title">Já sabe por onde começar?</h2>
+        <p class="banner-txt">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+        <input type="search" placeholder="Qual será sua próxima leitura?" class="banner-search">
+    </section>
+    <section class="carrossel">
+        <h2 class="carrosel-title">Novos lançamentos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/images/ApacheKafka.svg" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./assets/images/Liderança.svg" alt="Liderança"></div>
+                <div class="swiper-slide"><img src="./assets/images/Javascript.svg" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="./assets/images/Guia Front-end.svg" alt="Guia"></div>
+                <div class="swiper-slide"><img src="./assets/images/Portugol.svg" alt="Portugol"></div>
+                <div class="swiper-slide"><img src="./assets/images/Acessibilidade.svg" alt="Acessibilidade"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+
+    <script src="https://cdn..net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+        });
+    </script>
+</body>
+
+</html>
