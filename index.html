@@ -54,35 +54,86 @@
         <h2 class="carrosel-title">Novos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-                <div class="swiper-slide"><img src="./assets/images/ApacheKafka.svg" alt="ApacheKafka"></div>
-                <div class="swiper-slide"><img src="./assets/images/Liderança.svg" alt="Liderança"></div>
-                <div class="swiper-slide"><img src="./assets/images/Javascript.svg" alt="Javascript"></div>
-                <div class="swiper-slide"><img src="./assets/images/Guia Front-end.svg" alt="Guia"></div>
-                <div class="swiper-slide"><img src="./assets/images/Portugol.svg" alt="Portugol"></div>
-                <div class="swiper-slide"><img src="./assets/images/Acessibilidade.svg" alt="Acessibilidade"></div>
-            </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/images/ApacheKafka.svg" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./assets/images/Javascript.svg" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="./assets/images/Acessibilidade.svg" alt="Acessibilidade"></div>
+                <div class="swiper-slide"><img src="./assets/images/Portugol.svg" alt="Portugol"></div>
+                <div class="swiper-slide"><img src="./assets/images/Guia Front-end.svg" alt="Front-end"></div>
+                <div class="swiper-slide"><img src="./assets/images/Liderança.svg" alt="Liderança"></div>
+            </div>
         </div>
     </section>
+    <section class="secondary-container">
+        <div class="container-default">
+            <div class="info-description">
+                <h2 class="section-title">Talvez você também se interesse por...</h2>
+                <h2 class="text-title">Angular 11 e Firebase</h2>
+                <p class="text-default">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                <div class="icons">
+                    <span alt="favorito" class="icon" id="favorito"></span>
+                    <span alt="carrinho de compras" class="icon" id="compra"></span>
+                </div>
+            </div>
+            <div class="container-column">
+                <img src="./assets/images/Angular.svg" class="image" alt="angular">
+                <a href="#" class="button-default">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <section class="carrossel">
+        <h2 class="carrosel-title secondary">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="./assets/images/Tuning.svg" alt="ApacheKafka"></div>
+                <div class="swiper-slide"><img src="./assets/images/Arquitetura.svg" alt="Javascript"></div>
+                <div class="swiper-slide"><img src="./assets/images/Nodejs.svg" alt="Acessibilidade"></div>
+                <div class="swiper-slide"><img src="./assets/images/ReactNative.svg" alt="Portugol"></div>
+                <div class="swiper-slide"><img src="./assets/images/UX.svg" alt="Front-end"></div>
+                <div class="swiper-slide"><img src="./assets/images/MetricasAgeis.svg" alt="Liderança"></div>
+            </div>
+        </div>
+        <section class="secondary-container">
+            <div class="container-default">
+                <div class="info-description">
+                    <img id="AAA" src="./assets/images/Estrelinhas.svg" alt="">
+                    <h2 class="section-title">Autora do Mês</h2>
+                    <h2 class="text-title">Juliana Agarikov</h2>
+                    <p class="text-default">Analista de sistemas e escritora, juliana é especialista em Front-End</p>
+                    <div class="icons">
+                        <span alt="favorito" class="icon" id="favorito"></span>
+                        <span alt="carrinho de compras" class="icon" id="compra"></span>
+                    </div>
+                </div>
+                <div class="container-column">
+                    <img src="./assets/images/Perfil-escritora 1.svg" class="image" alt="">
+                    <a href="#" class="button-default">Saiba mais </a>
+                </div>
+            </div>
+        </section>
 
-    <script src="https://cdn..net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 3,
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            },
         });
     </script>
+
 </body>
 
 </html>

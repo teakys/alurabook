@@ -11,3 +11,12 @@
 .swiper-slide img {
     width:100%;
 }
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.secondary {
+    margin-top: 1em;
+}
