@@ -1,0 +1,37 @@
+.container-secao {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background-color: var(--branco);
+   margin-top: 1em;
+   padding-top: 1em;
+   height: auto;
+
+}
+
+.secao-caixa {
+    background: var(--azul);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em 0.90em;
+    height: auto;
+}
+
+.topicos-titulo {
+    margin-bottom: 2em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--branco);
+}
+
+.topicos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 1em;
+    row-gap: 1em;
+}

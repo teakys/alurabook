@@ -2,12 +2,15 @@
 @import url("banner.css");
 @import url("carrossel.css");
 @import url("angular.css");
+@import url("topico.css");
+@import url("rodape.css");
 
 :root {
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
     --laranja: #EB9B00;
     --preto: #000000;
+    --blue: #002F52;
     --azul: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
     --swiper-theme-color: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
@@ -74,10 +77,9 @@ body {
     text-decoration: none;
     font-size: 1em;
     background-color: var(--laranja);
-    padding: .75em 1em;
+    padding: 1em;
     color: var(--branco);
-    font-weight: 500;
-    text-align: center;
+
 }
 
 .container-column {
