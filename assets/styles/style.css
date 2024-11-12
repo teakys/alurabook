@@ -14,6 +14,7 @@
     --azul: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins";
     --swiper-theme-color: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+    --fonte-secundaria: "Josefin Sans";
 } 
 
 
@@ -51,7 +52,6 @@ body {
     margin-top: 1em;
     width: 80%;
     display: flex;
-    justify-content: space-between;
     background-color: var(--branco);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .212);
     padding: 1em;
@@ -73,21 +73,27 @@ body {
     justify-content: space-between;
 }
 
+
+.container-column {
+    row-gap: 1.5em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-column a {
+    text-align: center;
+}
+
 .button-default {
     text-decoration: none;
     font-size: 1em;
     background-color: var(--laranja);
     padding: 1em;
     color: var(--branco);
-
+    width: auto;
 }
 
-.container-column {
-    row-gap: 2rem;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-}
 
 .img {
     width: 80%;
@@ -114,4 +120,37 @@ body {
 #compra {
     background-image: url(../images/Sacola.svg);
     margin-left: 1em;
+}
+
+
+@media screen and (min-width:1024px) {
+    .container-default {
+        width: 50%;
+        justify-content: space-between;
+        height: auto;
+        margin-top: 0;
+        column-gap: 0;
+        margin-bottom: 2em;
+    }
+
+    .info-description {
+        justify-content: center;
+    }
+
+    .text-title {
+        margin: 1em 0;
+    }
+
+    .container-column {
+        width: auto;
+        row-gap: .5em;
+    }
+
+    .text-default {
+        margin-bottom: 2.9em;
+    }
+
+    #AAA {
+        margin-bottom: .5em;
+    }
 }

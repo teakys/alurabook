@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <title>alurabook</title>
@@ -37,10 +38,39 @@
                     <a href="#" class="lista-menu-link">Design & UX</a>
                 
             </ul>
-            <img src="./assets/images/Logo.svg" alt="icone" class="container-img">
+            <div class="container hd-logo">
+                <img src="./assets/images/Logo.svg" alt="icone" class="container-img">
+                <h2 class="alurabook-title"><b class="title-negrito">Alura</b>Books</h2>
+            </div>
         </div>
-        <div class="container">
-            <a href="#"><img src="./assets/images/Favoritos.svg" alt="meus favoritos" class="container-img"></a>
+        <ul class="container hd-list">
+
+            <input type="checkbox" id="tablet-menu" class="container-btn">
+            <label for="tablet-menu">
+                <li class="list-item">Categorias</li>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Programação</a>
+                
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Front-end</a>
+                
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Infraestrutura</a>
+                
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Business</a>
+                
+                <li class="lista-menu-item">
+                    <a href="#" class="lista-menu-link">Design & UX</a>
+                
+            </ul>
+            <li class="list-item">Favoritos</li>
+            <li class="list-item">Minha Estante</li>
+        </ul>
+        <div class="container img-ctn">
+            <a href="#"><img src="./assets/images/Favoritos.svg" alt="meus favoritos" class="container-img container-img-none"></a>
             <a href="#"><img src="./assets/images/Compras.svg" alt="carrinho de compras" class="container-img"></a>
             <a href="#"><img src="./assets/images/Usuario.svg" alt="meu perfil" class="container-img"></a>
         </div>
@@ -56,6 +86,9 @@
         <div class="swiper">
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -122,30 +155,33 @@
         </section>
         <section class="container-secao">
             <div class="secao-caixa">
-                <h2 class="topicos-tistulo">Tópicos visitados recentemente</h2>
+                <h2 class="topicos-titulo">Tópicos visitados recentemente</h2>
                 <div class="topicos-lista">
                     <a href="#" class="button-default">Android</a>
                     <a href="#" class="button-default">Marketing digital</a>
                     <a href="#" class="button-default">Agile</a>
-                    <a href="#" class="button-default">Startups</a>
+                    <a href="#" class="button-default">OO</a>
                     <a href="#" class="button-default">HTML & CSS</a>
                     <a href="#" class="button-default">Python</a>
-                    <a href="#" class="button-default">OO</a>
+                    <a href="#" class="button-default">Startups</a>
                     <a href="#" class="button-default">Java</a>
                 </ul>
             </div>
         </section>
-            <footer class="rodape">
-                <div class="email">
+        <section class="rodape">
+            <div class="email">
+                <div class="email-txt">
                     <h3 class="email-titulo">Fique por dentro das novidades!</h3>
                     <p class="email-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-                    <input type="email" placeholder="Cadastre seu e-mail" class="email-input">
                 </div>
-                <hr>
-                <div class="email">
-                    <h2 class="autor">Grupo Alura</h2>
-                </div>
-            </footer>
+                <input type="email" placeholder="Cadastre seu e-mail" class="email-input">
+            </div>
+        </section>
+        <hr>
+        <footer class="footer">
+            <h2 class="autor">Grupo Alura</h2>
+        </footer>
+        
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

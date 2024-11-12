@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-top: 0.5em;
 }
 
 
@@ -57,4 +58,61 @@
 
 .container-btn {
     display: none;
+}
+
+.alurabook-title {
+    display: none;
+}
+
+.hd-list {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+
+    .header-hmenu {
+        display: none;
+    }
+
+    .container-img-none {
+        display: none;
+    }
+
+    .alurabook-title {
+        display: block;
+        color: var(--preto);
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .title-negrito {
+        font-weight: 700;
+    }
+
+    .hd-list {
+        display: flex;
+        text-transform: uppercase;
+        column-gap: 3em;
+    }
+
+    .lista-menu {
+        width: auto;
+    }
+
+    .list-item {
+        font-size: 1em;
+        font-weight: 400;
+        color: var(--preto);
+    }
+
+    .img-ctn {
+        column-gap: 2em;
+    }
+
+    .header {
+        justify-content: space-around;
+    }
+    
 }
