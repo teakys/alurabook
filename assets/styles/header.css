@@ -64,9 +64,15 @@
     display: none;
 }
 
+
+.icon-txt {
+    display: none;
+}
+
 .hd-list {
     display: none;
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -107,12 +113,28 @@
         color: var(--preto);
     }
 
-    .img-ctn {
-        column-gap: 2em;
-    }
-
     .header {
         justify-content: space-around;
     }
-    
+}
+
+@media screen and (min-width:1728px) {
+    .hd-list {
+        margin-right: auto;
+        margin-left: 5em;
+    }
+
+    .container-img {
+        margin-left: 3em;
+    }
+
+    .img-ctn {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .icon-txt {
+        display: block;
+        margin-right: 3em;
+    }
 }
