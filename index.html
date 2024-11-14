@@ -17,7 +17,7 @@
     <header class="header">
         <div class="container">
             <input type="checkbox" id="menu" class="container-btn">
-            <label for="menu">
+            <label for="menu" class="container-rotulo">
                 <span class="header-hmenu container-img"></span>
             </label>
             <ul class="lista-menu">
@@ -46,7 +46,7 @@
         <ul class="container hd-list">
 
             <input type="checkbox" id="tablet-menu" class="container-btn">
-            <label for="tablet-menu">
+            <label for="tablet-menu" class="tablet-rotulo">
                 <li class="list-item">Categorias</li>
             </label>
             <ul class="lista-menu">
@@ -80,12 +80,12 @@
     <section class="banner">
         <h2 class="banner-title">Já sabe por onde começar?</h2>
         <p class="banner-txt">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" placeholder="Qual será sua próxima leitura?" class="banner-search">
+        <input type="search" placeholder="Qual será sua próxima leitura?" class="banner-search input">
     </section>
     <section class="carrossel">
         <h2 class="carrosel-title">Últimos lançamentos</h2>
         <!-- Slider main container -->
-         <div class="desktop-section">
+        <div class="desktop-section">
             <div class="swiper">
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -103,23 +103,23 @@
                     <div class="swiper-slide"><img src="./assets/images/Liderança.svg" alt="Liderança"></div>
                 </div>
             </div>
-
-        <section class="secondary-container">
-            <div class="container-default">
-                <div class="info-description">
-                    <h2 class="section-title">Talvez você também se interesse por...</h2>
-                    <h2 class="text-title">Angular 11 e Firebase</h2>
-                    <p class="text-default">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    <div class="icons">
-                        <span alt="favorito" class="icon" id="favorito"></span>
-                        <span alt="carrinho de compras" class="icon" id="compra"></span>
+            <section class="secondary-container">
+                <div class="container-default">
+                    <div class="info-description">
+                        <h2 class="section-title">Talvez você também se interesse por...</h2>
+                        <h2 class="text-title">Angular 11 e Firebase</h2>
+                        <p class="text-default">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        <div class="icons">
+                            <span alt="favorito" class="icon" id="favorito"></span>
+                            <span alt="carrinho de compras" class="icon" id="compra"></span>
+                        </div>
+                    </div>
+                    <div class="container-column">
+                        <img src="./assets/images/Angular.svg" class="image" alt="angular">
+                        <a href="#" class="button-default card-btn">Saiba mais</a>
                     </div>
                 </div>
-                <div class="container-column">
-                    <img src="./assets/images/Angular.svg" class="image" alt="angular">
-                    <a href="#" class="button-default">Saiba mais</a>
-                </div>
-            </div>
+            </section>
         </div>
     </section>
     <section class="carrossel">
@@ -157,7 +157,7 @@
                     </div>
                     <div class="container-column">
                         <img src="./assets/images/Perfil-escritora 1.svg" class="image" alt="">
-                        <a href="#" class="button-default">Saiba mais </a>
+                        <a href="#" class="button-default card-btn">Saiba mais </a>
                     </div>
                 </div>
             </section>
@@ -183,7 +183,7 @@
                     <h3 class="email-titulo">Fique por dentro das novidades!</h3>
                     <p class="email-texto">Atualizações de e-books, novos livros, promoções e outros.</p>
                 </div>
-                <input type="email" placeholder="Cadastre seu e-mail" class="email-input">
+                <input type="email" placeholder="Cadastre seu e-mail" class="email-input input">
             </div>
         </section>
         <hr>

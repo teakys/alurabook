@@ -22,8 +22,9 @@
     border-radius: 1.5em;
     padding: 1em;
     width: 100%;
-
 }
+
+
 
 .banner-search::placeholder {
     color: var(--branco);
@@ -59,8 +60,7 @@
 
     .banner-search::placeholder {
         font-size: 1em;
-        padding-left: 5em;
-        background-position: 7em;        
+        
     }
  
 }

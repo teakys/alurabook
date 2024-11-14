@@ -36,7 +36,7 @@
 .email-input {
 
     display:block;
-    padding: 0.5em 0;
+    padding: 0.5em 0.5em;
     border-radius: 1.5em;
 }
 
@@ -67,7 +67,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 2em 15vw 3em 15vw;
+        padding: 3em 0;
     }
 
     .email-titulo {
@@ -132,8 +132,7 @@
 
 @media screen and (min-width:1728px) {
     .email {
-        padding-top: 4em;
-        padding-bottom: 4em;
+
     }
 
     .email-txt {
