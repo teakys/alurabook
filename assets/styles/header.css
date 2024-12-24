@@ -12,8 +12,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
-
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
 }
 
 
@@ -64,6 +66,9 @@
     display: none;
 }
 
+body {
+    padding-top: 72px;
+}
 
 .icon-txt {
     display: none;
